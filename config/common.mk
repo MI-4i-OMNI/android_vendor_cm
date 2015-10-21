@@ -209,6 +209,13 @@ PRODUCT_PACKAGES += \
 #    media.sf.omx-plugin=libffmpeg_omx.so \
 #    media.sf.extractor-plugin=libffmpeg_extractor.so
 
+# TCM (TCP Connection Management)
+PRODUCT_PACKAGES += \
+    tcmiface
+
+PRODUCT_BOOT_JARS += \
+    tcmiface
+
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
